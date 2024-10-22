@@ -1,0 +1,67 @@
+### List Contacts
+GET http://localhost:8000/api/contacts HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+### Create Contact
+POST http://localhost:8000/api/contacts HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "name": "Jhon"
+}
+
+### Show Contact
+GET http://localhost:8000/api/contacts/1 HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+### Find Contact By Name
+GET http://localhost:8000/api/contacts/find/jhon HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+### Update Contact
+PUT http://localhost:8000/api/contacts/1
+content-type: application/json
+Accept: application/json
+
+{
+    "name": "Jonh Jonh"
+}
+
+### Delete Contact
+DELETE  http://localhost:8000/api/contacts/1 HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+### Add email
+POST http://localhost:8000/api/contacts/1/email
+content-type: application/json
+Accept: application/json
+
+{
+    "type": "gmail",
+    "address": "marialuila123@gmail.com"
+}
+
+### Delete Email
+DELETE  http://localhost:8000/api/contacts/1/email/3 HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+### Add phone
+POST http://localhost:8000/api/contacts/1/phone
+content-type: application/json
+Accept: application/json
+
+{
+    "type": "tim",
+    "number": "77998786766"
+}
+
+### Delete Phone
+DELETE  http://localhost:8000/api/contacts/1/phone/2 HTTP/1.1
+content-type: application/json
+Accept: application/json
